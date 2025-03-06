@@ -4,16 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { courseCard as CourseCard } from "../components/courseCard";
 import { DashboardCard } from "../components/dashboardCard";
 const Dashboard = () => {
-  // Fetch enrolled courses from Redux state
   const courses = useSelector((state) => state.student.enrolledCourses);
-  // const markCompleted = (id) => {
-  //   // Update progress to 100 when marked completed
-  //   setCourses((prevCourses) =>
-  //     prevCourses.map((course) =>
-  //       course.id === id ? { ...course, progress: 100, completed: true } : course
-  //     )
-  //   );
-  // };
 
   return (
     <div>
