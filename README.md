@@ -1,12 +1,55 @@
-# React + Vite
+# Sample Course App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React + Vite** project that provides a minimal setup to get React working in Vite with HMR and ESLint rules.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Vite + React** for fast development
+- **ESLint** with recommended configurations
+- **Backend with Express & JSON Server**
+- **Socket.io** for real-time communication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Installation & Setup
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/VivekPatel2117/sample-course-app.git
+   cd sample-course-app
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Install dependencies for both frontend and backend:
+   ```sh
+   cd frontend/
+   npm install
+   ```
+
+## 💻 Running the Project
+
+### Frontend
+To start the React app:
+   ```sh
+cd backend/
+   npm run dev
+   ```
+
+### Backend
+To run the backend server and JSON server concurrently:
+   ```sh
+   npm run dev
+   ```
+
+This will:
+- Start **JSON Server** at `http://localhost:5000`
+- Start **Express Server**
+
+## 🤝 Contributing
+Feel free to fork the project, create a branch, and submit a pull request!
+
+## 📄 License
+This project is **open-source** and available under the **MIT License**.
+
+
+
+
+
+https://github.com/user-attachments/assets/40a47173-c8d0-462a-abe6-587a909c7d41
+
