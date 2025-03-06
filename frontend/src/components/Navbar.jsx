@@ -5,8 +5,8 @@ export const Navbar = ({ handleInput }) => {
   return (
     <header className="bg-white border-b">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex-1 md:flex md:items-center md:gap-12">
+        <div className="flex h-16 items-center lg:justify-between">
+          <div className="flex lg:flex-1 md:flex md:items-center md:gap-12">
             <Link className="text-teal-600 flex items-center gap-1 w-[15vw]" to="/">
             <span className="sr-only">Home</span>
               <svg
@@ -20,12 +20,12 @@ export const Navbar = ({ handleInput }) => {
                   fill="currentColor"
                 />
               </svg>
-              <p>Courses-app</p>
+              <p className="lg:flex hidden">Courses-app</p>
             </Link>
 
             {/* Only show search form if handleInput is a function */}
             {typeof handleInput === "function" && (
-              <form className="hidden w-full md:flex items-center border border-gray-300 rounded-lg px-3 py-1 mx-6">
+              <form className="lg:w-full flex items-center border border-gray-300 rounded-lg lg:px-3 lg:py-1 lg:mx-6 mx-4 p-1.5">
                 <input
                   type="text"
                   placeholder="Search courses..."
@@ -40,7 +40,7 @@ export const Navbar = ({ handleInput }) => {
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" className="hidden md:block">
+            <nav aria-label="Global" className="md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <Link className="text-gray-500 transition hover:text-gray-500/75" to="/">
